@@ -162,8 +162,14 @@ const showMessage = (message, color) => {
         {/* API Status Indicator */}
         <ApiStatus connected={apiConnected} message={apiMessage} />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Column: Task Creation */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h2 className="text-xl font-bold text-gray-800 mb-6">
+              Just New
+            </h2>
+
+          </div>
           <div className="bg-white rounded-xl shadow-lg p-6">
             <h2 className="text-xl font-bold text-gray-800 mb-6">
               <i className="fas fa-plus-circle text-green-500 mr-2"></i>Create
